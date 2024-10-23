@@ -14,7 +14,7 @@
 
 ## User Guide for `run-databricks-query`
 
-## Easy two step intall: 
+## Easy one step install and .env setup: 
 
 * pip install databricks-tool
 * Note: only tested with python 3.10 (should not use current python versions as databricks-sql-connector will not work)
