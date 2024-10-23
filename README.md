@@ -21,9 +21,7 @@
 * pip install databricks-tool
 * Note: only tested with python 3.10 (should not use current python versions as databricks-sql-connector will not work)
 
-**Set Up Environment Variables**
-
-   Create a `.env` file in the root directory of the cloned project. This file Must contain your Databricks credentials in the formate:
+*  Create a `.env` file where you want to run sql query. This file Must contain your Databricks credentials in the formate:
    ```
    DATABRICKS_SERVER_HOSTNAME=your-server-hostname
    DATABRICKS_HTTP_PATH=your-http-path
@@ -84,7 +82,9 @@
 
 ## Explanation of other things in Repository 
 
-* databricks_tool adds onto databricks query test program by packaging a python script with setuptools to create a command line databricks sql runner.
+* databricks_tool is a package that lets you run sql querys using databricks on the commond line.
+
+* workspace and test folders show examples of python scripts running sql on a databricks database.
 
 * See [`video`](https://www.youtube.com/watch?v=rTuY1ctXtiI) for walkthrough run using databricks with python code.
 
