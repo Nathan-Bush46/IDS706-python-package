@@ -14,8 +14,6 @@
 
 ## User Guide for `run-databricks-query`
 
-## **Installation Steps**
-
 ## Easy two step intall: 
 
 * pip install databricks-tool
