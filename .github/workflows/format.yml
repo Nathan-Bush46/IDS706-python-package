@@ -1,0 +1,45 @@
+name: Docker Image CI Format
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      # Load environment variables from .env file
+    - name: Load environment variables from .env
+      run: |
+        echo "Loading environment variables from .env file"
+        if [ -f .env ]; then
+          # Read the .env file line by line
+          while IFS= read -r line; do
+            # Remove inline comments (anything after #)
+            line="${line%%#*}"
+            # Check for non-empty lines
+            if [[ ! -z "$line" ]]; then
+              # Export each variable to the environment
+              export "$line"
+              # Add the variable to $GITHUB_ENV for later steps
+              echo "$line" >> $GITHUB_ENV
+            fi
+          done < .env
+        else
+          echo ".env file not found."
+        fi
+    - name: Build the Docker image
+      run: docker build . --file .devcontainer/Dockerfile --tag my-image-name:$(date +%s)
+    - name: install requirements
+      run: |
+        make install
+    - name: run format
+      run: |
+        make format
+    - run: echo "🍏 This job's status is ${{ job.status }}."
