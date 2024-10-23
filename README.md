@@ -1,15 +1,14 @@
 # IDS-SQL-Python 
 
-[![Docker Image CI Main](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/main.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/main.yml)
+[![Docker Image CI Main](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/main.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/main.yml)
 
-[![Docker Image CI Lint](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/lint.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/lint.yml)
+[![Docker Image CI Lint](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/lint.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/lint.yml)
 
-[![Docker Image CI Test](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/test.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/test.yml)
+[![Docker Image CI Test](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/test.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/test.yml)
 
-[![Docker Image CI Format](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/format.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/format.yml)
+[![Docker Image CI Format](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/format.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/format.yml)
 
-[![Docker Image CI Install](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/install.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-MySQL-python-dataBricks/actions/workflows/install.yml)
-
+[![Docker Image CI Install](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/install.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/install.yml)
 
 
 ## User Guide for `run-databricks-query`
@@ -52,7 +51,7 @@
 
    Note: must use old version of python for databricks-sql-connector, python 3.10 works
 
-### **Usage Instructions**
+## Usage Instructions
 
 1. **Running a Query**
 
