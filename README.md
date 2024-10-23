@@ -1,4 +1,4 @@
-# IDS-SQL-Python 
+# SQL-Python-Package
 
 [![Docker Image CI Main](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/main.yml/badge.svg)](https://github.com/Nathan-Bush46/IDS706-python-package/actions/workflows/main.yml)
 
