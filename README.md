@@ -27,30 +27,6 @@
 
    Replace `your-server-hostname`, `your-http-path`, and `your-access-token` with your actual Databricks credentials.
 
-## Alternative
-1. **Clone the Repository**
-   Start by cloning this repository 
-
-2. **Set Up Environment Variables**
-
-   Create a `.env` file in the root directory of the cloned project. This file Must contain your Databricks credentials in the formate:
-   ```
-   DATABRICKS_SERVER_HOSTNAME=your-server-hostname
-   DATABRICKS_HTTP_PATH=your-http-path
-   DATABRICKS_TOKEN=your-access-token
-   ```
-
-   Replace `your-server-hostname`, `your-http-path`, and `your-access-token` with your actual Databricks credentials.
-
-3. **Install the Package**
-
-   Use pip to install the package locally. Run this command in the root directory (src/databricks_tool/setup.py) where`setup.py` is located:
-   ```bash
-   pip3.10 install .
-   ```
-
-   Note: must use old version of python for databricks-sql-connector, python 3.10 works
-
 ## Usage Instructions
 
 1. **Running a Query**
@@ -75,6 +51,30 @@
 ### **Additional Information**
 
 - **Dependencies**: The tool requires `python-dotenv` and `databricks-sql-connector`. These are automatically installed when you run `pip install .`.
+
+### Alternative install
+1. **Clone the Repository**
+   Start by cloning this repository 
+
+2. **Set Up Environment Variables**
+
+   Create a `.env` file in the root directory of the cloned project. This file Must contain your Databricks credentials in the formate:
+   ```
+   DATABRICKS_SERVER_HOSTNAME=your-server-hostname
+   DATABRICKS_HTTP_PATH=your-http-path
+   DATABRICKS_TOKEN=your-access-token
+   ```
+
+   Replace `your-server-hostname`, `your-http-path`, and `your-access-token` with your actual Databricks credentials.
+
+3. **Install the Package**
+
+   Use pip to install the package locally. Run this command in the root directory (src/databricks_tool/setup.py) where`setup.py` is located:
+   ```bash
+   pip3.10 install .
+   ```
+
+   Note: must use old version of python for databricks-sql-connector, python 3.10 works
 
 
 ## Explanation of other things in Repository 
